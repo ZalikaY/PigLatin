@@ -27,21 +27,51 @@ public class PigLatin {
 		//Set word to lowercase
 		word = word.toLowerCase();
 		
-		//if -else for replacing constants
 		
 
         // Determine whether the first character in word is a vowel
         char firstChar = word.charAt(0); 
-        String vowels = "aeiou";		
+        String vowels = "aeiou";	
+        
+        //Index of the vowels
         int vowelIndex = vowels.indexOf(firstChar);
-        
-        
+        boolean firstVowel = (vowelIndex >= 0); 
+
+
+        //if -else for replacing consonants
+        if (firstVowel) {
+            System.out.println(word + "hay\"");
+        }
+        else {
+        	
+        	// first character is consonant, assuming it is a letter
+            String restOfWord = word.substring(1); //substring is all but first character
+            
+            System.out.println(restOfWord + firstChar + "ay");
 		}
-        
+		}
         
         //Ending prompt
 		
 	}
 
-}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 
